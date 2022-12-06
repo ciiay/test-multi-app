@@ -14,7 +14,7 @@ spec:
   project: {{ default "default" $.Values.project }}
   source:
     path: test-app-{{ . }}
-    repoURL: https://github.com/jannfis/test-multi-app
+    repoURL: https://github.com/ciiay/test-multi-app
     targetRevision: HEAD
   syncPolicy:
     automated:
