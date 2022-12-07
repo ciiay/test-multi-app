@@ -9,7 +9,8 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: test-app-{{ . }}
+    namespace: test-app
+    # namespace: test-app-{{ . }}
     server: https://kubernetes.default.svc
   project: {{ default "default" $.Values.project }}
   source:
